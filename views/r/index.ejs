@@ -1,0 +1,45 @@
+<% include r_header %>
+
+<div class="prog_search">
+  <form action="">
+    <div class="line">
+      <select name="state" class="inp lng3">
+        <option value="">작업상태</option>
+        <option value="">대기</option>
+        <option value="">디자인</option>
+        <option value="">개발</option>
+        <option value="">완료</option>
+        <option value="">보류</option>
+      </select>
+      <select name="product" class="inp lng3">
+        <option value="">상품구분</option>
+        <option value="">홈페이지</option>
+        <option value="">반응형 홈페이지</option>
+        <option value="">쇼핑몰</option>
+        <option value="">웹호스팅,도메인</option>
+        <option value="">수정</option>
+      </select>
+      <select name="pay" class="inp lng3">
+        <option value="">결제상태</option>
+        <option value="">미수금</option>
+      </select>
+    </div>
+    <div class="line">
+      <select name="search_type" class="inp lng3">
+        <option value="">업체명</option>
+        <option value="">대표자</option>
+        <option value="">연락처</option>
+        <option value="">영업담당</option>
+        <option value="">도메인</option>
+        <option value="">개발도메인</option>
+        <option value="">메모</option>
+        <option value="">기타내용</option>
+      </select>
+      <input type="text" name="keyword" class="inp">
+      <button type="submit" class="sbm_btn">검색</button>
+    </div>
+  </form>
+</div>
+
+
+<% include r_footer %>
