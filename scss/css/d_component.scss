@@ -1,0 +1,95 @@
+$deCompColor: rgba(27,118,255,1);
+$deCompColorHover: rgba(27,118,255,0.5);
+
+
+
+$deBorderRadius: 30, 15, 8, 5, 3;
+@each $val in $deBorderRadius{
+    .de_btn.r#{$val},.de_inp.r#{$val}{
+        @include bdrs($val+px);
+    }
+}
+@each $val in $deBorderRadius{
+    .de_cki.r#{$val} i,.de_cks.r#{$val} i{
+        @include bdrs($val+px);
+    }
+}
+
+
+
+.de_btn{display: inline-block;line-height: 120%;text-align: center;vertical-align: middle;color: #666;transition: all 0.5s;-webkit-transition: all 0.5s;-webkit-background-clip: border-box;background-clip: border-box;}
+.de_btn:disabled{background-color: #eee !important;color: #ccc !important;cursor: auto;}
+.de_btn:focus{outline: none;}
+
+/* btn size*/
+.de_btn.sg{min-width: 155px;height: 60px;line-height: 58px;font-size: 14px;font-weight: 500;}
+.de_btn.sl{min-width: 130px;height: 50px;line-height: 48px;font-size: 14px;font-weight: 500;}
+.de_btn.sm{min-width: 116px;height: 45px;line-height: 43px;font-size: 12px;font-weight: 500;}
+.de_btn.ss{min-width: 95px;height: 36px;line-height: 34px;font-size: 12px;}
+.de_btn.st{min-width: 80px;height: 30px;line-height: 28px;font-size: 12px;}
+
+.de_btn.fill{background-color: $deCompColor;color: #fff;}
+.de_btn.fill:hover{background-color: $deCompColorHover;}
+.de_btn.fill:focus{-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);}
+
+.de_btn.outline{border: 1px solid #999;}
+.de_btn.outline:hover{border: 1px solid $deCompColor;color: $deCompColor;}
+.de_btn.outline:focus{-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);}
+.de_btn.outline:disabled{border: 1px solid #ccc;}
+
+.de_btn.ghost{border: 1px solid transparent;}
+.de_btn.ghost:hover{border: 1px solid transparent;color: $deCompColor;}
+.de_btn.ghost:focus{text-shadow: 1px 5px 5px rgba(0,0,0,0.15);}
+
+// input text
+.de_inp{width: 100%;border: 1px solid #ddd;}
+input.de_inp{padding: 0 10px;}
+.de_inp::-webkit-input-placeholder{color: #999;}
+.de_inp::-moz-placeholder{color: #999;}
+.de_inp:-ms-input-placeholder{color: #999;}
+.de_inp:-moz-placeholder{color: #999;}
+.de_inp:focus{border: 1px solid $deCompColor;outline: none;}
+.de_inp:disabled{background-color: #eee;}
+
+input.de_inp.sm{height: 45px;padding: 0 20px;}
+.de_inp.ss{height: 36px;}
+.de_inp.st{height: 30px;}
+
+// input radio
+.de_rdo,.de_cks{display: inline-block;vertical-align: middle;
+    i{display: inline-block;border: 1px solid #9b9b9b;vertical-align: middle;background-color: #fff;
+    }
+    input{display: block;position: absolute;width: 0;height: 0;overflow: hidden;opacity: 0;}
+    i::after{content: "";display: block;width: 100%;height: 100%;background-color: transparent;transition: all 0.5s;-webkit-transition: all 0.5s;transform: scale(1,1);-webkit-transform: scale(1,1);transform: scale(1,1);}
+    input:checked ~ i::after{background-color: $deCompColor;transform: scale(0.5,0.5) rotate(0.3deg);-webkit-transform: scale(0.5,0.5) rotate(0.3deg);transform: scale(0.5,0.5) rotate(0.3deg);}
+    input:disabled ~ i{background-color: #eee;}
+}
+
+
+.de_rdo.txt i,.de_cks.txt i,.de_cki.txt i{margin-right: 10px;}
+//
+
+.de_rdo{
+    i{@include bdrs(50%);}
+    i::after{@include bdrs(50%);}
+}
+
+
+.de_cki,.de_cks{display: inline-block;vertical-align: middle;
+    i{display: inline-block;border: 1px solid #9b9b9b;vertical-align: middle;}
+}
+
+.de_rdo.sg,.de_cki.sg,.de_cks.sg{
+    i{width: 30px;height: 30px;}
+}
+.de_rdo.ss,.de_cki.ss,.de_cks.ss{
+    i{width: 20px;height: 20px;}
+}
+
+.de_cki{display: inline-block;vertical-align: middle;
+    input{display: block;position: absolute;width: 0;height: 0;overflow: hidden;opacity: 0;}
+    i{position: relative;}
+    i::after{content: "";display: block;position: absolute;left: 50%;top: 50%;width: 5px;height: 10px;margin-top: -7px;margin-left: -4px;border: solid $deCompColor;border-width: 0 2px 2px 0;transition: all 0.5s;-webkit-transition: all 0.5s;opacity: 0;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);}
+    input:checked ~ i::after{opacity: 1;}
+    input:disabled ~ i{background-color: #eee;}
+}

@@ -1,0 +1,15 @@
+.sys_popup{position: absolute;z-index: 3000;max-width: 100%;border: 1px solid #ccc;background-color: #fff;
+  .cont{height: 100%;
+    .top{height: calc(100% - 48px);
+      img{width: 100%;}
+    }
+    .bottom{padding: 10px;text-align: right;
+      button{vertical-align: middle;
+        img{vertical-align: middle;}
+      }
+      .sys_pop_close.cookie::before{content: "";display: inline-block;width: 12px;height: 12px;margin-bottom: 3px;margin-right: 5px;border: 1px solid #ccc;vertical-align: middle;}
+      .close{margin-bottom: 3px;margin-left: 10px;}
+    }
+  }
+}
+.sys_popup.dn{display: none;}
