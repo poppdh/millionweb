@@ -1,0 +1,234 @@
+<% include r_header %>
+
+<form action="" class="req_form">
+  <section id="comp_area" class="project_det_sect">
+    <div class="project_tab">
+      <ul>
+        <li class="a">
+          <a href="#comp_area">업체정보</a>
+        </li>
+        <li>
+          <a href="#pay_area">결제정보</a>
+        </li>
+        <li>
+          <a href="#work_area">작업정보</a>
+        </li>
+      </ul>
+    </div>
+    <div class="vertical_tb">
+      <table>
+        <tbody>
+          <tr>
+            <th class="s">업체명</th>
+            <td>
+              <input type="text" name="comp_name" class="inp w500 req_inp" data-alert="업체명을" placeholder="업체명" />
+            </td>
+          </tr>
+          <tr>
+            <th>사업자번호</th>
+            <td>
+              <input type="text" name="comp_num" class="inp w500 req_inp" data-alert="사업자번호를" placeholder="사업자번호" />
+            </td>
+          </tr>
+          <tr>
+            <th>주소</th>
+            <td class="addr_wrap">
+              <input type="text" name="zipcode" class="inp w200 addr_s addr1"  placeholder="우편번호" />
+              <div class="cb">
+                <input type="text" name="addr1" class="inp w500 addr_s addr2" placeholder="주소" />
+                <input type="text" name="addr2" class="inp w500 addr3" placeholder="상세주소" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="s">담당자</th>
+            <td>
+              <input type="text" name="comp_manag" class="inp w500 req_inp" data-alert="담당자를" placeholder="담당자"/>
+            </td>
+          </tr>
+          <tr>
+            <th class="s">연락처</th>
+            <td>
+              <input type="text" name="comp_tel" class="inp w500 req_inp" data-alert="연락처를" placeholder="연락처"/>
+            </td>
+          </tr>
+          <tr>
+            <th>FAX</th>
+            <td>
+              <input type="text" name="comp_fax" class="inp w500" placeholder="FAX" />
+            </td>
+          </tr>
+          <tr>
+            <th>이메일</th>
+            <td>
+              <input type="text" name="comp_mail" class="inp w500" placeholder="이메일" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section id="pay_area" class="project_det_sect pt70">
+    <div class="project_tab">
+      <ul>
+        <li>
+          <a href="#comp_area">업체정보</a>
+        </li>
+        <li class="a">
+          <a href="#pay_area">결제정보</a>
+        </li>
+        <li>
+          <a href="#work_area">작업정보</a>
+        </li>
+      </ul>
+    </div>
+    <div class="vertical_tb">
+      <table>
+        <tbody>
+          <tr>
+            <th class="s">총금액</th>
+            <td>
+              <input type="text" name="pay1" class="inp w500 req_inp" data-alert="총금액을" placeholder="총금액"/>
+            </td>
+          </tr>
+          <tr>
+            <th>선금</th>
+            <td>
+              <input type="text" name="pay2" class="inp w500" placeholder="선금"/>
+            </td>
+          </tr>
+          <tr>
+            <th>완료금</th>
+            <td>
+              <input type="text" name="pay3" class="inp w500" placeholder="완료금"/>
+            </td>
+          </tr>
+          <tr>
+            <th>추가개발금</th>
+            <td>
+              <input type="text" name="pay4" class="inp w500" placeholder="추가개발금"/>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section id="work_area" class="project_det_sect pt70">
+    <div class="project_tab">
+      <ul>
+        <li>
+          <a href="#comp_area">업체정보</a>
+        </li>
+        <li>
+          <a href="#pay_area">결제정보</a>
+        </li>
+        <li class="a">
+          <a href="#work_area">작업정보</a>
+        </li>
+      </ul>
+    </div>
+    <div class="vertical_tb">
+      <table>
+        <tbody>
+          <tr>
+            <th class="s">진행상태</th>
+            <td>
+              <label for="s1" class="de_rdo ss txt mr10">
+                <input type="radio" name="state" id="s1" value="1"/>
+                <i></i>대기중
+              </label>
+              <label for="s2" class="de_rdo ss txt mr10">
+                <input type="radio" name="state" id="s2" value="2"/>
+                <i></i>디자인
+              </label>
+              <label for="s3" class="de_rdo ss txt mr10">
+                <input type="radio" name="state" id="s3" value="3"/>
+                <i></i>개발
+              </label>
+              <label for="s4" class="de_rdo ss txt mr10">
+                <input type="radio" name="state" id="s4" value="4"/>
+                <i></i>완료
+              </label>
+              <label for="s5" class="de_rdo ss txt mr10">
+                <input type="radio" name="state" id="s5" value="5"/>
+                <i></i>보류
+              </label>
+            </td>
+          </tr>
+          <tr class="s">
+            <th>영업담당자</th>
+            <td>
+              <input type="text" name="manager" class="inp w500 req_inp" data-alert="영업담당자를" placeholder="영업담당자"/>
+            </td>
+          </tr>
+          <tr>
+            <th>도메인</th>
+            <td>
+              <input type="text" name="domain" class="inp w500" placeholder="도메인"/>
+            </td>
+          </tr>
+          <tr>
+            <th>시안번호</th>
+            <td>
+              <input type="text" name="design_num" class="inp w500" placeholder="시안번호" />
+            </td>
+          </tr>
+          <tr>
+            <th>개발 url</th>
+            <td>
+              <input type="text" name="dev_url" class="inp w500" placeholder="개발 url"/>
+            </td>
+          </tr>
+          <tr>
+            <th>개발 시작일</th>
+            <td>
+              <input type="text" name="s_date" class="inp w200 date_p" placeholder="개발 시작일"/>
+            </td>
+          </tr>
+          <tr>
+            <th>개발 완료일</th>
+            <td>
+              <input type="text" name="e_date" class="inp w200 date_p" placeholder="개발 완료일"/>
+            </td>
+          </tr>
+          <tr>
+            <th class="s">상품구분</th>
+            <td>
+              <label for="p1" class="de_rdo ss txt mr10">
+                <input type="radio" name="projtype" id="p1" value="1"/>
+                <i></i>홈페이지
+              </label>
+              <label for="p2" class="de_rdo ss txt mr10">
+                <input type="radio" name="projtype" id="p2" value="2"/>
+                <i></i>반응형홈페이지
+              </label>
+              <label for="p3" class="de_rdo ss txt mr10">
+                <input type="radio" name="projtype" id="p3" value="3"/>
+                <i></i>쇼핑몰
+              </label>
+              <label for="p4" class="de_rdo ss txt mr10">
+                <input type="radio" name="projtype" id="p4" value="4"/>
+                <i></i>웹호스팅, 도메인
+              </label>
+              <label for="p5" class="de_rdo ss txt mr10">
+                <input type="radio" name="projtype" id="p5" value="5"/>
+                <i></i>수정
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th>기타내용</th>
+            <td>
+              <textarea name="desc" cols="30" rows="10" class="inp w100p h270" placeholder="기타 내용"></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <div class="tac mt30">
+    <button type="submit" class="b_sbm_btn">등록</button>
+  </div>
+</form>
+
+<% include r_footer %>
