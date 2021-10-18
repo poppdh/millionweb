@@ -17,44 +17,6 @@ $deBorderRadius: 30, 15, 8, 5, 3;
 
 
 
-.de_btn{display: inline-block;line-height: 120%;text-align: center;vertical-align: middle;color: #666;transition: all 0.5s;-webkit-transition: all 0.5s;-webkit-background-clip: border-box;background-clip: border-box;}
-.de_btn:disabled{background-color: #eee !important;color: #ccc !important;cursor: auto;}
-.de_btn:focus{outline: none;}
-
-/* btn size*/
-.de_btn.sg{min-width: 155px;height: 60px;line-height: 58px;font-size: 14px;font-weight: 500;}
-.de_btn.sl{min-width: 130px;height: 50px;line-height: 48px;font-size: 14px;font-weight: 500;}
-.de_btn.sm{min-width: 116px;height: 45px;line-height: 43px;font-size: 12px;font-weight: 500;}
-.de_btn.ss{min-width: 95px;height: 36px;line-height: 34px;font-size: 12px;}
-.de_btn.st{min-width: 80px;height: 30px;line-height: 28px;font-size: 12px;}
-
-.de_btn.fill{background-color: $deCompColor;color: #fff;}
-.de_btn.fill:hover{background-color: $deCompColorHover;}
-.de_btn.fill:focus{-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);}
-
-.de_btn.outline{border: 1px solid #999;}
-.de_btn.outline:hover{border: 1px solid $deCompColor;color: $deCompColor;}
-.de_btn.outline:focus{-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);}
-.de_btn.outline:disabled{border: 1px solid #ccc;}
-
-.de_btn.ghost{border: 1px solid transparent;}
-.de_btn.ghost:hover{border: 1px solid transparent;color: $deCompColor;}
-.de_btn.ghost:focus{text-shadow: 1px 5px 5px rgba(0,0,0,0.15);}
-
-// input text
-.de_inp{width: 100%;border: 1px solid #ddd;}
-input.de_inp{padding: 0 10px;}
-.de_inp::-webkit-input-placeholder{color: #999;}
-.de_inp::-moz-placeholder{color: #999;}
-.de_inp:-ms-input-placeholder{color: #999;}
-.de_inp:-moz-placeholder{color: #999;}
-.de_inp:focus{border: 1px solid $deCompColor;outline: none;}
-.de_inp:disabled{background-color: #eee;}
-
-input.de_inp.sm{height: 45px;padding: 0 20px;}
-.de_inp.ss{height: 36px;}
-.de_inp.st{height: 30px;}
-
 // input radio
 .de_rdo,.de_cks{display: inline-block;vertical-align: middle;
     i{display: inline-block;border: 1px solid #9b9b9b;vertical-align: middle;background-color: #fff;
